@@ -5,7 +5,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, toRefs,onMounted} from 'vue';
+import { defineComponent, ref, toRefs,onMounted, reactive} from 'vue';
 import CryptoJS from "crypto-js";
 export default defineComponent({
   name: 'HelloWorld',
@@ -21,7 +21,10 @@ export default defineComponent({
     };
     
 
-   
+    let person = reactive({
+      name:'li',
+      age:20
+    })
     
 
     return {
